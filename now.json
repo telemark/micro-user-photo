@@ -1,0 +1,12 @@
+{
+  "name": "micro-user-photo",
+  "alias": [
+    "photo.service.t-fk.no"
+  ],
+  "type": "npm",
+  "env": {
+    "NODE_ENV": "production",
+    "DB_SERVER": "@micro-user-photo-db-server",
+    "DB_COLLECTION": "@micro-user-photo-db-collection"
+  }
+}

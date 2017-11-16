@@ -1,0 +1,65 @@
+{
+  "name": "micro-user-photo",
+  "description": "API for user photo",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "author": {
+    "name": "Jonas Enge",
+    "email": "jonas.enge@t-fk.no",
+    "url": "https://github.com/telemark"
+  },
+  "contributors": [
+    {
+      "name": "Geir Gåsodden",
+      "email": "geir.gasodden@pythonia.no",
+      "url": "https://github.com/zrrrzzt"
+    }
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=8.9.1"
+  },
+  "scripts": {
+    "test": "standard && nsp check && ava",
+    "test-offline": "standard && ava",
+    "coverage": "nyc ava",
+    "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
+    "standard-fix": "standard --fix",
+    "start": "micro",
+    "dev": "micro-dev -H localhost"
+  },
+  "keywords": [
+    "microservice",
+    "micro",
+    "photo",
+    "profile",
+    "Telemark fylkeskommune"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/telemark/micro-user-photo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/telemark/micro-user-photo/issues"
+  },
+  "homepage": "https://github.com/telemark/micro-user-photo#readme",
+  "devDependencies": {
+    "ava": "0.23.0",
+    "coveralls": "3.0.0",
+    "nsp": "3.1.0",
+    "micro-dev": "1.4.0",
+    "nyc": "11.3.0",
+    "standard": "10.0.3",
+    "test-listen": "1.0.2"
+  },
+  "dependencies": {
+    "axios": "0.17.1",
+    "markdown-it": "8.4.0",
+    "micro": "9.0.1",
+    "micro-cors": "0.0.4",
+    "micro-jwt-auth": "1.9.0",
+    "microrouter": "3.0.0",
+    "mongodb": "2.2.33"
+  }
+}
