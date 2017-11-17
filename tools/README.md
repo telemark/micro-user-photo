@@ -25,12 +25,15 @@ Kjør step2
 
 ## Store bilder
 
-BIG=`find . -name '*' -size +600k`
-for i in $BIG; do
+```bash
+BIGFILES=`find . -name '*' -size +600k`
+for i in $BIGFILES; do
   convert -resize 800x600 $i $i
 done
+```
 
 ## Konvertere til png
+```bash
 for i in *.BMP; do
   convert $i `basename $i .BMP`.png
 done
@@ -38,3 +41,4 @@ done
 for i in *.bmp; do
   convert $i `basename $i .bmp`.png
 done
+```

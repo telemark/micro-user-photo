@@ -4,7 +4,28 @@
 
 # micro-user-photo
 
-...
+# GET /
+
+Returns this readme
+
+# GET /user/:user
+
+Returns user photo in img-tag
+
+# GET /user/:user/base64
+
+Returns user photo in base64
+
+# POST /user/:user
+
+Deletes earlier photo if exists and uploads new. Must be png.
+
+Set authorization header jwt
+
+body:
+```json
+{ "username": "username", "file": "filebase64" }
+```
 
 ## License
 
