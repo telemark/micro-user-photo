@@ -31,7 +31,7 @@ body:
 
 ```sh
 IMG="$(printf username.png | base64)"
-curl -v -H "Authorization: token123" -d '{ "file": $IMG }' https://photos.minelev.no/user/username
+curl -v -H "Authorization: token123" -d '{ "file": $IMG }' https://photos.service.url/user/username
 ```
 
 ## License
