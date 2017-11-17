@@ -4,19 +4,19 @@
 
 # micro-user-photo
 
-# GET /
+## GET /
 
 Returns this readme
 
-# GET /user/:user
+## GET /user/:user
 
 Returns user photo in img-tag
 
-# GET /user/:user/base64
+## GET /user/:user/base64
 
 Returns user photo in base64
 
-# POST /user/:user
+## POST /user/:user
 
 Deletes earlier photo if exists and uploads new. Must be png.
 
@@ -25,6 +25,13 @@ Set authorization header jwt
 body:
 ```json
 { "username": "username", "file": "filebase64" }
+```
+
+## Curl post
+
+```sh
+IMG="$(printf username.png | base64)"
+curl -v -H "Authorization: token123" -d '{ "file": $IMG }' https://photos.minelev.no/user/username
 ```
 
 ## License
