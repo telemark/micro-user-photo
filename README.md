@@ -24,7 +24,7 @@ Set authorization header jwt
 
 body:
 ```json
-{ "username": "username", "file": "filebase64" }
+{ "file": "filebase64" }
 ```
 
 ## Curl post
