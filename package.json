@@ -60,6 +60,7 @@
     "micro-cors": "0.0.4",
     "micro-jwt-auth": "1.9.0",
     "microrouter": "3.0.0",
+    "mongo-sanitize": "^1.0.0",
     "mongodb": "2.2.33"
   }
 }
