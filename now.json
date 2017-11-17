@@ -1,7 +1,7 @@
 {
   "name": "micro-user-photo",
   "alias": [
-    "photo.service.t-fk.no"
+    "photos.minelev.no"
   ],
   "type": "npm",
   "env": {
