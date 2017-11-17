@@ -30,8 +30,9 @@ body:
 ## Curl post
 
 ```sh
-IMG="$(printf username.png | base64)"
-curl -v -H "Authorization: token123" -d '{ "file": $IMG }' https://photos.service.url/user/username
+IMG="$(cat photo.png | base64 -w0)"
+echo '{ "file": "'"$IMG"'" }'
+curl -H "Authorization: token123" -d '{ "file": "'"$IMG"'" }' https://photos.service.url/user/username
 ```
 
 ## License
