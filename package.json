@@ -27,7 +27,8 @@
     "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
     "standard-fix": "standard --fix",
     "start": "micro",
-    "dev": "micro-dev -H localhost"
+    "dev": "micro-dev -H localhost",
+    "deploy": "now && now alias"
   },
   "keywords": [
     "microservice",

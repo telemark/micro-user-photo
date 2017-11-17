@@ -1,9 +1,12 @@
 {
   "name": "micro-user-photo",
   "alias": [
-    "photo.service.t-fk.no"
+    "photos.minelev.no"
   ],
   "type": "npm",
+  "engines": {
+    "node": "8.9.1"
+  },
   "env": {
     "NODE_ENV": "production",
     "DB_SERVER": "@micro-user-photo-db-server",
