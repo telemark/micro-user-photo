@@ -18,7 +18,7 @@
   ],
   "main": "index.js",
   "engines": {
-    "node": ">=8.9.1"
+    "node": ">=8.9.3"
   },
   "scripts": {
     "test": "standard && nsp check && ava",
@@ -39,7 +39,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/telemark/micro-user-photo.git"
+    "url": "git+https://github.com/telemark/micro-user-photo.git"
   },
   "bugs": {
     "url": "https://github.com/telemark/micro-user-photo/issues"
