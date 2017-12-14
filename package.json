@@ -57,7 +57,7 @@
   "dependencies": {
     "axios": "0.17.1",
     "markdown-it": "8.4.0",
-    "micro": "9.0.1",
+    "micro": "9.0.2",
     "micro-cors": "0.0.4",
     "micro-jwt-auth": "1.9.0",
     "microrouter": "3.0.0",
