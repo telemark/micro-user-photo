@@ -10,6 +10,19 @@ Returns this readme
 
 ## GET /user/:user
 
+Returns json of user
+
+```json
+{
+  "_id:": "5a0eaba8f1317311c5567268",
+  "username": "0103grgr",
+  "file": "ErkJggg==",
+  "url": "https://file-njosybuecy.now.sh"
+}
+```
+
+## GET /user/:user/img
+
 Returns user photo in img-tag
 
 ## GET /user/:user/base64
@@ -24,7 +37,10 @@ Set authorization header jwt
 
 body:
 ```json
-{ "file": "filebase64" }
+  {
+    "file": "filebase64",
+    "url": "url-to-image"
+  }
 ```
 
 ## Curl post
@@ -39,4 +55,4 @@ curl -H "Authorization: token123" -d '{ "file": "'"$IMG"'" }' https://photos.ser
 
 [MIT](LICENSE)
 
-![alt text](https://robots.kebabstudios.party/micro-user-photo.png "Robohash image of micro-user-photo")
+![Robohash image of micro-user-photo](https://robots.kebabstudios.party/micro-user-photo.png "Robohash image of micro-user-photo")

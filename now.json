@@ -5,12 +5,15 @@
   ],
   "type": "npm",
   "engines": {
-    "node": "8.9.2"
+    "node": "8.9.3"
   },
   "env": {
     "NODE_ENV": "production",
     "DB_SERVER": "@micro-user-photo-db-server",
     "DB_COLLECTION": "@micro-user-photo-db-collection",
-    "JWT_SECRET": "@micro-user-photo-jwt-secret"
+    "JWT_SECRET": "@micro-user-photo-jwt-secret",
+    "PAPERTRAIL_HOSTNAME": "userphotos",
+    "PAPERTRAIL_HOST": "@tfk-papertrail-host",
+    "PAPERTRAIL_PORT": "@tfk-papertrail-port"
   }
 }
