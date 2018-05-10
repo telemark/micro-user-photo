@@ -1,7 +1,7 @@
 {
   "name": "micro-user-photo",
   "description": "API for user photo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "private": true,
   "author": {
