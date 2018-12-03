@@ -23,7 +23,7 @@ router.get('/', handlers.getReadme)
 router.get('/user/:user', handlers.getUser)
 router.get('/user/:user/img', handlers.getPhoto)
 router.get('/user/:user/base64', handlers.getPhoto64)
-router.post('/user/:user', jwt({secret: config.SYSTEM_JWT_SECRET}), handlers.uploadPhoto)
+router.post('/user/:user', jwt({ secret: config.SYSTEM_JWT_SECRET }), handlers.uploadPhoto)
 
 module.exports = (request, response) => {
   router(request, response, finalhandler(request, response))
