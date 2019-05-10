@@ -58,7 +58,7 @@
     "axios": "0.18.0",
     "cors": "2.8.5",
     "express-jwt": "5.3.1",
-    "finalhandler": "1.1.1",
+    "finalhandler": "1.1.2",
     "markdown-it": "8.4.2",
     "micro": "9.3.4",
     "mongo-sanitize": "1.0.1",
