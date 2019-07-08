@@ -47,7 +47,7 @@
   },
   "homepage": "https://github.com/telemark/micro-user-photo#readme",
   "devDependencies": {
-    "ava": "1.4.1",
+    "ava": "2.2.0",
     "coveralls": "3.0.3",
     "micro-dev": "3.0.0",
     "nyc": "14.1.1",
