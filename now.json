@@ -1,10 +1,10 @@
 {
-  "version": 1,
+  "version": 2,
   "name": "micro-user-photo",
+  "scope": "minelev",
   "alias": [
     "photos.minelev.no"
   ],
-  "type": "npm",
   "engines": {
     "node": ">10.0.0"
   },
@@ -16,5 +16,39 @@
     "PAPERTRAIL_HOSTNAME": "userphotos",
     "PAPERTRAIL_HOST": "@tfk-papertrail-host",
     "PAPERTRAIL_PORT": "@tfk-papertrail-port"
-  }
+  },
+  "builds": [
+    {
+      "src": "/*.md",
+      "use": "@now/md"
+    },
+    {
+      "src": "/index.js",
+      "use": "@now/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/README.html"
+    },
+    { "src": "/favicon.ico",
+      "dest": "/static/favicon.ico"
+    },
+    {
+      "src": "/user/(.*)",
+      "dest": "/index.js",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+        "Access-Control-Allow-Methods": "GET, OPTIONS, POST",
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Max-Age": "3600"
+      }
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/README.html"
+    }
+  ]
 }

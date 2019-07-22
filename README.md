@@ -50,6 +50,29 @@ echo '{ "file": "'"$IMG"'" }'
 curl -H "Authorization: token123" -d '{ "file": "'"$IMG"'" }' https://photos.service.url/user/username
 ```
 
+## Development
+
+Add a local `.env` file
+
+```
+NODE_ENV=development
+DB_SERVER=micro-user-photo-db-server
+DB_COLLECTION=micro-user-photo-db-collection
+DB_NAME=micro-user-photo-db-name
+SYSTEM_JWT_SECRET=system-jwt
+PAPERTRAIL_HOSTNAME=userphotos
+PAPERTRAIL_HOST=papertrail-host
+PAPERTRAIL_PORT=papertrail-port
+```
+
+Start the dev environment
+
+```
+$ now dev
+```
+
+
+
 ## License
 
 [MIT](LICENSE)
