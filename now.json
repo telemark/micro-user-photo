@@ -5,9 +5,6 @@
   "alias": [
     "photos.minelev.no"
   ],
-  "engines": {
-    "node": ">10.0.0"
-  },
   "env": {
     "NODE_ENV": "production",
     "DB_SERVER": "@micro-user-photo-db-server",
